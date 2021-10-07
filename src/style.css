@@ -49,9 +49,9 @@ body {
 }
 
 #loader {
-  border: 0.4rem solid #181818; /* Light grey */
-  border-top: 0.4rem solid white; /* Blue */
-  border-bottom: 0.4rem solid white; /* Blue */
+  border: 0.4rem solid #181818;
+  border-top: 0.4rem solid white;
+  border-bottom: 0.4rem solid white;
   border-radius: 50%;
   width: 110px;
   height: 110px;
