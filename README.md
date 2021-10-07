@@ -4,6 +4,15 @@
 
 > This project display a leaderboard
 
+## Desktop 💻
+![screenshot](images/desktopImage.png)
+
+## Mobile 📱
+![screenshot](images/mobileImage.png)
+
+## Live Demo
+https://mike2611.github.io/leaderboard/
+
 ## Built with
 
 - HTML
