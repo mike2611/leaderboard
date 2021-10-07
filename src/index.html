@@ -18,18 +18,10 @@
     <section class="container" id="scores">
       <div class="d-flex justify-content-around align-items-center mb-4">
         <h2>Recent scores</h2>
-        <button class="btn btn-primary" type="button">Refresh</button>
+        <button class="btn btn-primary" type="button" id="refresh">Refresh</button>
       </div>
       <table class="table table-striped">
-        <tbody>
-          <tr>
-            <th scope="row"> Name </th>
-            <td>200</td>
-          </tr>
-          <tr>
-            <th scope="row"> Name </th>
-            <td>300</td>
-          </tr>
+        <tbody id="table-body">
         </tbody>
       </table>
     </section>
@@ -38,11 +30,11 @@
       <div class="mb-4">
         <h2>Add your score</h2>
       </div>
-      <form class="d-flex flex-column align-items-center" action="">
-        <input class="mb-2" type="text" name="name" id="name" placeholder="Your name">
-        <input class="mb-2" type="text" name="score" id="score" placeholder="Your score">
-        <button class=" btn btn-primary align-self-end" type="submit">Submit</button>
-      </form>
+      <div class="d-flex flex-column align-items-center">
+        <input class="mb-2" type="text" name="name" id="name" placeholder="Your name" required  minlength="3" maxlength="12">
+        <input class="mb-2" type="text" name="score" id="score" placeholder="Your score" required minlength="1" maxlength="4">
+        <button class=" btn btn-primary align-self-end" type="button" id="submit">Submit</button>
+      </div>
     </section>
   </main>
 
