@@ -16,22 +16,28 @@ const clearInputs = (name, score) => {
 };
 
 const hideSmall = () => {
-  const small = document.querySelector('#score-error');
-  small.classList.add('d-none');
+  const smallScore = document.querySelector('#score-error');
+  const smallName = document.querySelector('#name-error');
+  smallScore.classList.add('d-none');
+  smallName.classList.add('d-none');
 };
 
 const validateInputs = (name, score) => {
-  const small = document.querySelector('#score-error');
+  const smallScore = document.querySelector('#score-error');
+  const smallName = document.querySelector('#name-error');
 
   if (!Number.isInteger(Number(score.value))) {
-    small.classList.remove('d-none');
-    small.innerText = 'Your ELO puntation should be an integer number';
+    smallScore.classList.remove('d-none');
+    smallScore.innerText = 'Your ELO puntation should be an integer number';
   } else if (score.value > 4000) {
-    small.classList.remove('d-none');
-    small.innerText = 'The biggest ELO puntation you can add is 4000';
+    smallScore.classList.remove('d-none');
+    smallScore.innerText = 'The biggest ELO puntation you can add is 4000';
   } else if (score.value < 1) {
-    small.classList.remove('d-none');
-    small.innerText = 'The lowest ELO puntation you can add is 1';
+    smallScore.classList.remove('d-none');
+    smallScore.innerText = 'The lowest ELO puntation you can add is 1';
+  } else if (!/[a-zA-Z]/.test(name.value)) {
+    smallName.classList.remove('d-none');
+    smallName.innerText = 'User name should contain at least one letter';
   } else {
     const userScore = { user: name.value, score: score.value };
     addScore(userScore);
