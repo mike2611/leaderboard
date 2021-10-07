@@ -5,10 +5,10 @@
 > This project display a leaderboard
 
 ## Desktop 💻
-![screenshot](images/desktopImage.png)
+![screenshot](src/images/desktopImage.png)
 
 ## Mobile 📱
-![screenshot](images/mobileImage.png)
+![screenshot](src/images/mobileImage.png)
 
 ## Live Demo
 https://mike2611.github.io/leaderboard/
