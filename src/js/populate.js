@@ -1,5 +1,7 @@
 import { getScores } from './http';
 
+import icons from './icons';
+
 const saveScores = async () => {
   let scores = [];
 
@@ -15,11 +17,15 @@ const saveScores = async () => {
 const populateScores = (userScores) => {
   const table = document.querySelector('#table-body');
   table.innerHTML = '';
+  let index = 0;
   userScores.forEach((userScore) => {
+    const span = icons(index += 1);
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <th class="text-capitalize" scope="row">${userScore.user}</th>
-    <td>${userScore.score}</td>`;
+    <th class="d-flex align-items-center text-capitalize users-names" scope="row">
+      ${span}${userScore.user}
+    </th>
+    <td >${userScore.score}</td>`;
     table.appendChild(tr);
   });
 };
