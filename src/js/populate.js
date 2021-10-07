@@ -2,6 +2,8 @@ import { getScores } from './http';
 
 import icons from './icons';
 
+import loader from './loader';
+
 const saveScores = async () => {
   let scores = [];
 
@@ -15,6 +17,7 @@ const saveScores = async () => {
 };
 
 const populateScores = (userScores) => {
+  loader();
   const table = document.querySelector('#table-body');
   table.innerHTML = '';
   let index = 0;

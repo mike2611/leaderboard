@@ -48,3 +48,18 @@ body {
 .serif-font {
   font-family: serif;
 }
+
+#loader {
+  border: .4rem solid #181818; /* Light grey */
+  border-top: .4rem solid white; /* Blue */
+  border-bottom: .4rem solid white; /* Blue */
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
