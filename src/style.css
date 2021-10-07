@@ -1,3 +1,64 @@
 body {
   padding: 0;
+  background: #181818;
+  background-size: cover;
+  font-size: 17px;
+}
+
+.text-wood {
+  background-image: url(images/woodPattern.png);
+  background-repeat: repeat;
+  background-clip: text;  /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6.5rem;
+}
+
+.btn-wood {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 17px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url(images/woodPattern.png);
+  border: 2px solid white;
+}
+
+.inp-user {
+  width: 100%;
+  background: #2c3034;
+  border: 2px solid white;
+}
+
+.inp-user::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inp-user::-ms-input-placeholder {
+  color: white;
+}
+
+.icon-size {
+  font-size: 1.2rem;
+}
+
+.serif-font {
+  font-family: serif;
+}
+
+#loader {
+  border: 0.4rem solid #181818;
+  border-top: 0.4rem solid white;
+  border-bottom: 0.4rem solid white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

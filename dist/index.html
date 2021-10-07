@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
+
 <body>
-    <div>Este es una prueba otras</div>
-    
+  <header class="m-5 d-flex justify-content-center justify-content-md-start">
+    <h1 class="text-white"> <span class="text-wood">Go</span> <span class="serif-font"> ELO <span class="d-none d-md-inline">punctation</span></span></h1>
+  </header>
+  <main class="d-flex flex-column flex-md-row">
+    <section class="container d-flex flex-column justify-content-center" id="scores">
+      <div class="d-flex justify-content-around align-items-center mb-4">
+        <h2 class="text-white serif-font">Recent scores</h2>
+        <button class="btn btn-wood fw-bolder serif-font" type="button" id="refresh">Refresh</button>
+      </div>
+      <div id="loader" class="align-self-center mt-5 mb-5"></div>
+      <table class="table table-striped table-dark ms-md-3">
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </section>
+
+    <section class="container d-flex flex-column align-items-center" id="add-score">
+      <div class="mb-4">
+        <h2 class="text-white serif-font">Add your score</h2>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <input class="mb-2 inp-user text-capitalize text-white" type="text" name="name" id="name" placeholder="Your name" required  minlength="3" maxlength="12">
+        <small class="inter-font d-none text-danger" id="name-error"></small>
+        <input class="mt-2 mb-2 inp-user text-white" type="number" name="score" id="score" placeholder="Your score" required min="1" max="4000" value="">
+        <small class="inter-font d-none text-danger mb-2" id="score-error"></small>
+        <button class=" btn btn-wood align-self-end fw-bolder mt-3 mb-4 serif-font" type="button" id="submit">Submit</button>
+      </div>
+    </section>
+  </main>
+
 </body>
+
 </html>
