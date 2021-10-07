@@ -10,10 +10,16 @@ const addScore = async (userScore) => {
   }
 };
 
+const clearInputs = (name, score) => {
+  name.value = '';
+  score.value = '';
+};
+
 export default () => {
   const name = document.querySelector('#name');
   const score = document.querySelector('#score');
 
   const userScore = { user: name.value, score: score.value };
   addScore(userScore);
+  clearInputs(name, score);
 };
