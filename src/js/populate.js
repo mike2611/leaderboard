@@ -22,7 +22,7 @@ const populateScores = (userScores) => {
     const span = icons(index += 1);
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <th class="d-flex align-items-center text-capitalize users-names" scope="row">
+    <th class="d-flex align-items-center text-capitalize" scope="row">
       ${span}${userScore.user}
     </th>
     <td >${userScore.score}</td>`;

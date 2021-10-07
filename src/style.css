@@ -2,6 +2,7 @@ body {
   padding: 0;
   background: #181818;
   background-size: cover;
+  font-size: 17px;
 }
 
 
@@ -11,13 +12,14 @@ body {
   background-clip: text;  /* stylelint-disable-line */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5.5rem;
+  font-size: 6.5rem;
 }
 
 .btn-wood {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  font-size: 17px;
   overflow: hidden;
   cursor: pointer;
   background: url(images/woodPattern.png);
@@ -41,4 +43,8 @@ body {
 
 .icon-size {
   font-size: 1.2rem;
+}
+
+.serif-font {
+  font-family: serif;
 }
