@@ -18,7 +18,7 @@ const populateScores = (userScores) => {
   userScores.forEach((userScore) => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <th scope="row">${userScore.user}</th>
+    <th class="text-capitalize" scope="row">${userScore.user}</th>
     <td>${userScore.score}</td>`;
     table.appendChild(tr);
   });
