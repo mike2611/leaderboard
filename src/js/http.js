@@ -1,5 +1,5 @@
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-const id = 'OooiPlPSlT7MRxIRCQK3';
+const id = 'TLqf551ls3wUDs2hL2TO';
 const scoresURL = `${baseURL}/${id}/scores/`;
 
 export const getScores = async () => {

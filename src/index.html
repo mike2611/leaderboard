@@ -31,8 +31,9 @@
         <h2>Add your score</h2>
       </div>
       <div class="d-flex flex-column align-items-center">
-        <input class="mb-2" type="text" name="name" id="name" placeholder="Your name" required  minlength="3" maxlength="12">
-        <input class="mb-2" type="number" name="score" id="score" placeholder="Your score" required minlength="1" maxlength="4">
+        <input class="mb-2 inp-user text-capitalize" type="text" name="name" id="name" placeholder="Your name" required  minlength="3" maxlength="12">
+        <input class="mb-2 inp-user" type="number" name="score" id="score" placeholder="Your score" required min="1" max="4000" value="">
+        <small class="inter-font d-none text-danger mb-2" id="score-error"> prueba</small>
         <button class=" btn btn-primary align-self-end" type="button" id="submit">Submit</button>
       </div>
     </section>
