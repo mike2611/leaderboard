@@ -1,5 +1,4 @@
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-// Testing const id 'IuZuJsDR5C0IYSnRFGr7';
 const id = 'Om0Z3Dw8EtOMmLeXvZVI';
 const scoresURL = `${baseURL}/${id}/scores/`;
 
