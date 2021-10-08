@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> This project display a leaderboard
+> This project displays a leaderboard the data is obtained and preserved thanks to the Leaderboard API service. 
 
 ## Desktop 💻
 ![screenshot](src/images/desktopImage.png)
@@ -58,5 +58,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
+- [Leaderboard API](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 
