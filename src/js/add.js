@@ -28,13 +28,13 @@ const validateInputs = (name, score) => {
 
   if (!Number.isInteger(Number(score.value))) {
     smallScore.classList.remove('d-none');
-    smallScore.innerText = 'Your ELO puntation should be an integer number';
+    smallScore.innerText = 'Your ELO punctuation should be an integer number';
   } else if (score.value > 4000) {
     smallScore.classList.remove('d-none');
-    smallScore.innerText = 'The biggest ELO puntation you can add is 4000';
+    smallScore.innerText = 'The biggest ELO punctuation you can add is 4000';
   } else if (score.value < 1) {
     smallScore.classList.remove('d-none');
-    smallScore.innerText = 'The lowest ELO puntation you can add is 1';
+    smallScore.innerText = 'The lowest ELO punctuation you can add is 1';
   } else if (!/[a-zA-Z]/.test(name.value)) {
     smallName.classList.remove('d-none');
     smallName.innerText = 'User name should contain at least one letter';
