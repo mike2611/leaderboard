@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> This project displays a leaderboard the data is obtained and preserved thanks to the Leaderboard API service. 
+> This project displays Go board game punctuation from different players add your own, the data is obtained and preserved thanks to the Leaderboard API service. 
 
 ## Desktop 💻
 ![screenshot](src/images/desktopImage.png)
