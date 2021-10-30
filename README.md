@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> This project displays Go board game punctuation from different players. Add your own, the data is obtained and preserved thanks to the Leaderboard API service. 
+>  This project displays Go board game punctuations from different players. Add your own punctation, the data is obtained and preserved thanks to the Leaderboard API service.  
 
 ## Desktop 💻
 ![screenshot](src/images/desktopImage.png)
